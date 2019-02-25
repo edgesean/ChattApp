@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChannelVC.swift
 //  ChattApp
 //
 //  Created by Sean Dillon on 25/02/2019.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChannelVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+        self.revealViewController()?.rearViewRevealWidth = self.view.frame.size.width - 60
+    }
+    
 
 }
-

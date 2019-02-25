@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		010ED9B8222400D700FB4000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010ED9B7222400D700FB4000 /* AppDelegate.swift */; };
-		010ED9BA222400D700FB4000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010ED9B9222400D700FB4000 /* ViewController.swift */; };
 		010ED9BD222400D700FB4000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010ED9BB222400D700FB4000 /* Main.storyboard */; };
 		010ED9BF222400D900FB4000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010ED9BE222400D900FB4000 /* Assets.xcassets */; };
 		010ED9C2222400D900FB4000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010ED9C0222400D900FB4000 /* LaunchScreen.storyboard */; };
 		010ED9CE22240D4900FB4000 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010ED9CD22240D4800FB4000 /* SWRevealViewController.m */; };
+		010ED9D32224218C00FB4000 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010ED9D22224218C00FB4000 /* ChatVC.swift */; };
+		010ED9D5222421A400FB4000 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010ED9D4222421A400FB4000 /* ChannelVC.swift */; };
 		4B51F774861300D560230C71 /* Pods_ChattApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C11AA800428A20CA619759D /* Pods_ChattApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		010ED9B4222400D700FB4000 /* ChattApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChattApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		010ED9B7222400D700FB4000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		010ED9B9222400D700FB4000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		010ED9BC222400D700FB4000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		010ED9BE222400D900FB4000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		010ED9C1222400D900FB4000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -27,6 +27,8 @@
 		010ED9CA22240D4600FB4000 /* ChattApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChattApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		010ED9CC22240D4800FB4000 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		010ED9CD22240D4800FB4000 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		010ED9D22224218C00FB4000 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		010ED9D4222421A400FB4000 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		0C11AA800428A20CA619759D /* Pods_ChattApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800FC9766D19A5E70B0C34FC /* Pods-ChattApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChattApp/Pods-ChattApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE775E2C7640E8120F309803 /* Pods-ChattApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChattApp/Pods-ChattApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,9 +67,11 @@
 		010ED9B6222400D700FB4000 /* ChattApp */ = {
 			isa = PBXGroup;
 			children = (
+				010ED9D12224215600FB4000 /* Model */,
+				010ED9D02224215000FB4000 /* View */,
+				010ED9CF2224214600FB4000 /* Controller */,
 				010ED9C922240D2C00FB4000 /* Supporting Files */,
 				010ED9B7222400D700FB4000 /* AppDelegate.swift */,
-				010ED9B9222400D700FB4000 /* ViewController.swift */,
 				010ED9BB222400D700FB4000 /* Main.storyboard */,
 				010ED9BE222400D900FB4000 /* Assets.xcassets */,
 				010ED9C0222400D900FB4000 /* LaunchScreen.storyboard */,
@@ -84,6 +88,29 @@
 				010ED9CA22240D4600FB4000 /* ChattApp-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		010ED9CF2224214600FB4000 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				010ED9D22224218C00FB4000 /* ChatVC.swift */,
+				010ED9D4222421A400FB4000 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		010ED9D02224215000FB4000 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		010ED9D12224215600FB4000 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C2D5DFAD3A747B0E0EAED9E2 /* Pods */ = {
@@ -222,7 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				010ED9BA222400D700FB4000 /* ViewController.swift in Sources */,
+				010ED9D5222421A400FB4000 /* ChannelVC.swift in Sources */,
+				010ED9D32224218C00FB4000 /* ChatVC.swift in Sources */,
 				010ED9B8222400D700FB4000 /* AppDelegate.swift in Sources */,
 				010ED9CE22240D4900FB4000 /* SWRevealViewController.m in Sources */,
 			);
