@@ -17,6 +17,7 @@
 		010ED9D7222428F600FB4000 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010ED9D6222428F600FB4000 /* GradientView.swift */; };
 		01E63FB722254F8F005C96C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E63FB622254F8F005C96C3 /* Constants.swift */; };
 		01E63FB92225580D005C96C3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E63FB82225580D005C96C3 /* LoginVC.swift */; };
+		01E63FBB222564C2005C96C3 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E63FBA222564C2005C96C3 /* CreateAccountVC.swift */; };
 		4B51F774861300D560230C71 /* Pods_ChattApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C11AA800428A20CA619759D /* Pods_ChattApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		010ED9D6222428F600FB4000 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		01E63FB622254F8F005C96C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01E63FB82225580D005C96C3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		01E63FBA222564C2005C96C3 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		0C11AA800428A20CA619759D /* Pods_ChattApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChattApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800FC9766D19A5E70B0C34FC /* Pods-ChattApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChattApp/Pods-ChattApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE775E2C7640E8120F309803 /* Pods-ChattApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChattApp/Pods-ChattApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				010ED9D22224218C00FB4000 /* ChatVC.swift */,
 				010ED9D4222421A400FB4000 /* ChannelVC.swift */,
 				01E63FB82225580D005C96C3 /* LoginVC.swift */,
+				01E63FBA222564C2005C96C3 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				010ED9D5222421A400FB4000 /* ChannelVC.swift in Sources */,
 				010ED9D32224218C00FB4000 /* ChatVC.swift in Sources */,
+				01E63FBB222564C2005C96C3 /* CreateAccountVC.swift in Sources */,
 				01E63FB92225580D005C96C3 /* LoginVC.swift in Sources */,
 				010ED9D7222428F600FB4000 /* GradientView.swift in Sources */,
 				010ED9B8222400D700FB4000 /* AppDelegate.swift in Sources */,
